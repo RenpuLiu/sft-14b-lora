@@ -1,0 +1,12 @@
+# PyTorch: install the right build for your CUDA (H100 → CUDA 12.x). Example:
+# pip install --index-url https://download.pytorch.org/whl/cu124 torch torchvision
+
+transformers>=4.44.0
+datasets>=2.20.0
+accelerate>=0.34.0
+peft>=0.12.0
+trl>=0.9.6
+bitsandbytes>=0.44.1       # for 8-bit optimizer (optional but helps memory)
+flash-attn>=2.5.9          # requires CUDA toolkit headers; H100 supported
+einops
+sentencepiece
